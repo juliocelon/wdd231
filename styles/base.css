@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -9,34 +8,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* GRID PRINCIPAL */
 main {
     display: grid;
     grid-template-columns: 1fr;
-    /* Móviles: 1 sola columna */
     grid-gap: 20px;
     padding: 5px 20px;
 }
 
-
-
 .main-title {
     grid-column: 1;
-    /* Por defecto, ocupa toda la única columna */
     grid-row: 1;
     font-size: 2.5rem;
     margin-bottom: 10px;
     justify-self: start;
 }
 
-/* SECCIONES */
 section {
     background: #f0f0f0;
     padding: 10px;
     border: 2px solid #333;
 }
 
-/* Texto */
 h2 {
     padding: 10px;
     text-align: center;
@@ -48,13 +40,11 @@ p {
     padding: 20px;
 }
 
-/* Imagen centrada */
 section img {
     display: block;
     margin: 0 auto;
 }
 
-/* Botones de cursos */
 .subject {
     display: flex;
     justify-content: space-between;
@@ -76,7 +66,7 @@ section img {
     background-color: #0000FF;
 }
 
-/* Cursos */
+/* Courses */
 .course {
     display: grid;
     grid-template-columns: 1fr;
@@ -103,7 +93,7 @@ section img {
     text-align: center;
 }
 
-/* Encabezado y pie */
+/* Header and foot */
 header {
     display: flex;
     justify-content: flex-start;
@@ -133,7 +123,7 @@ footer p {
     line-height: 1.2;
 }
 
-/* Navegación móvil */
+/* nav */
 nav {
     background-color: #1e0381;
     color: #fff;

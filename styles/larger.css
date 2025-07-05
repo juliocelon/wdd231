@@ -1,4 +1,4 @@
-/* Menú horizontal en pantallas grandes */
+/* Menu */
 @media (min-width: 950px) {
     #menu {
         display: none;
@@ -29,39 +29,32 @@
     }
 }
 
-/* Grid responsivo para main */
+
+
 @media (min-width: 600px) {
     main {
         grid-template-columns: 2fr 1fr;
-        /* Dos columnas desde 600px */
         grid-template-rows: auto auto;
-        /* Título en primera fila, secciones en segunda */
     }
 
     .main-title {
         grid-column: 1 / -1;
-        /* Ocupa ambas columnas */
         grid-row: 1;
-        /* Mantenerlo en la primera fila */
     }
 
     .section-container:nth-of-type(1) {
         grid-column: 1;
-        /* About Me en la columna izquierda */
         grid-row: 2;
     }
 
     .section-container:nth-of-type(2) {
         grid-column: 2;
-        /* Student Photo en la columna derecha */
         grid-row: 2;
     }
 
     .web-certificate-courses {
         grid-column: 1 / -1;
-        /* Ocupa todas las columnas */
         grid-row: 3;
-        /* Siempre en la última fila */
     }
 
     .course {
@@ -86,16 +79,13 @@
 @media (min-width: 1000px) {
     main {
         grid-template-columns: 3fr 1fr;
-        /* About Me 75%, Student Photo 25% */
     }
 
     .main-title {
         grid-column: 1 / -1;
-        /* Título sigue ocupando todo el ancho */
     }
 
     .web-certificate-courses {
         grid-column: 1 / -1;
-        /* Sigue ocupando todo el ancho */
     }
 }
