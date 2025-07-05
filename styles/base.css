@@ -1,0 +1,188 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* GRID PRINCIPAL */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Móviles: 1 sola columna */
+    grid-gap: 20px;
+    padding: 5px 20px;
+}
+
+
+
+.main-title {
+    grid-column: 1;
+    /* Por defecto, ocupa toda la única columna */
+    grid-row: 1;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    justify-self: start;
+}
+
+/* SECCIONES */
+section {
+    background: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+/* Texto */
+h2 {
+    padding: 10px;
+    text-align: center;
+    background: #1e0381;
+    color: white;
+}
+
+p {
+    padding: 20px;
+}
+
+/* Imagen centrada */
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Botones de cursos */
+.subject {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.subject button {
+    flex: 1;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subject button:hover {
+    background-color: #0000FF;
+}
+
+/* Cursos */
+.course {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    flex: 1;
+}
+
+.course-card {
+    width: 100%;
+}
+
+.course-card button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+#totalCredits {
+    text-align: center;
+}
+
+/* Encabezado y pie */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #1e0381;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e0381;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+/* Navegación móvil */
+nav {
+    background-color: #1e0381;
+    color: #fff;
+}
+
+#menu {
+    font-size: 2rem;
+    color: #fff;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #1e0381;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navigation a {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navigation.open a {
+    display: block;
+}
