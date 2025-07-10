@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="W02 Assignment: Chamber Directory Page - Julio Celón">
+    <meta name="author" content="Julio Celón">
+
+    <title>W02 Assignment: Chamber Directory Page - Julio Celón</title>
+
+    <!-- Social media meta tags -->
+    <meta property="og:title" content="W02 Assignment: Chamber Directory Page - Julio Celón">
+    <meta property="og:description" content="Welcome to the Chamber Directory Page">
+    <meta property="og:image" content="https://juliocelon.github.io/wdd231/chamber/logo-cc.webp">
+    <meta property="og:url" content="https://juliocelon.github.io/wdd231/chamber/directory.html">
+
+
+    <link rel="icon" href="./favicon-cc.ico">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/app.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo2.svg" alt="site logo" width="35" height="35">
+        <span>Julio Celón</span>
+    </header>
+
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Chamber">Chamber Project</a></li>
+            <li><a href="#" title="Final">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>W02 - Chamber Directory Page - Julio Celón</h1>
+
+        <section class="section-container">
+            <h2>About Me</h2>
+            <p>I’m Julio Celón. I’m from Mexico City. I’m married and blessed with wonderful children who inspire me
+                every day to be my best self. My
+                family and my faith are at the heart of who I am; they give me strength, purpose, and the motivation to
+                serve others and
+                continue growing both personally and professionally.
+
+                I’m passionate about building meaningful connections, learning from others, and sharing experiences that
+                help us grow
+                together. I look forward to collaborating, exchanging ideas, and finding ways we can support each other
+                on this journey
+                of growth and service.</p>
+        </section>
+
+        <section class="section-container">
+            <h2>Student Photo</h2>
+            <img src="images/profile.webp" alt="Hello, my name is Julio Celon" width="200" height="268">
+        </section>
+
+        <section class="web-certificate-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="subject">
+                <button type="button" title="all-courses" id="all-courses">All courses</button>
+                <button type="button" title="wdd-courses" id="wdd-courses">WDD courses</button>
+                <button type="button" title="cse-courses" id="cse-courses">CSE courses</button>
+            </div>
+
+            <div class="courses">
+                <div class="course">
+                </div>
+            </div>
+
+            <p id="totalCredits"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <a href="https://github.com/juliocelon" target="_blank">
+            <img src="images/github.svg" alt="GitHub logo" width="35" height="35">
+        </a>
+        <a href="https://www.linkedin.com/in/juliocelon" target="_blank">
+            <img src="images/linkedin.svg" alt="LinkedIn logo" width="35" height="35">
+        </a>
+        <a href="https://www.youtube.com/channel/UCEEXsyBoDFuvW2w5y3XRh3g" target="_blank">
+            <img src="images/youtube.svg" alt="YouTube logo" width="35" height="35"> </a>
+
+        <p>© <span id="currentyear"></span> • Julio Celón • México City, México 🇲🇽 </p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
