@@ -3,7 +3,7 @@
 const cards = document.querySelector('#bussiness');
 
 async function getBussinessData() {
-    const response = await fetch("/chamber/data/members.json"); // request
+    const response = await fetch("./chamber/data/members.json"); // request
     if (!response.ok) {
         console.error("HTTP error:", response.status);
         return;
