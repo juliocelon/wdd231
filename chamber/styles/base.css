@@ -168,8 +168,7 @@ footer div {
 #bussiness section {
     padding: 40px;
     text-align: center;
-    border: 1px solid white;
-    border-bottom: 3px solid gray;
+
 }
 
 #bussiness section img {
@@ -195,7 +194,6 @@ footer div {
 
 .grid img {
     border: 1px solid #fff;
-    box-shadow: 0 0 1rem #555;
 }
 
 .list {
