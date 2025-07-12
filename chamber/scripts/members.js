@@ -17,34 +17,34 @@ getBussinessData();
 
 const displayMembers = (members) => {
     members.forEach((member) => {
-
         let card = document.createElement('section');
 
-        // Image
+        let name = document.createElement('h3');
+        name.textContent = member.name;
+
+        let contactInfo = document.createElement('div');
+        contactInfo.innerHTML = `
+            <p>${member.address}</p>
+            <p>${member["phone number"]}</p>
+        `;
+
+        let website = document.createElement('a');
+        website.href = member["web site url"];
+        website.textContent = "Visit Website";
+        website.target = "_blank";
+
+        // Image (only for grid)
         let image = document.createElement('img');
         image.src = member.image;
         image.alt = `Logo of ${member.name}`;
         image.loading = 'lazy';
 
-        let name = document.createElement('p');
-        name.textContent = `${member.name}`;
-
-        let address = document.createElement('p');
-        address.textContent = `${member.address}`;
-
-        let phone = document.createElement('p');
-        phone.textContent = `${member["phone number"]}`;
-
-        let website = document.createElement('a');
-        website.href = member["web site url"];
-        website.textContent = member["web site url"];
-
+        // Append for grid
         card.appendChild(image);
         card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
+        card.appendChild(contactInfo);
         card.appendChild(website);
 
         cards.appendChild(card);
     });
-}
+};

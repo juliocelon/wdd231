@@ -133,3 +133,45 @@
 
     object-position: center;
 }
+
+/* list */
+
+@media screen and (min-width: 600px) {
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: start;
+        /* ✅ Evita que el contenido centre verticalmente */
+        margin: 0;
+        padding: 0.1rem 0.3rem;
+        /* ✅ Reduce espacio interno */
+        gap: 0.2rem;
+        /* ✅ Pequeño espacio entre columnas */
+    }
+
+    .list section>* {
+        margin: 0;
+        padding: 0;
+        font-size: 0.85rem;
+        /* ✅ Texto más pequeño */
+        line-height: 1;
+        /* ✅ Línea compacta */
+    }
+
+    .list section img {
+        display: none;
+        /* Oculta imágenes en modo lista */
+    }
+
+    .list section:nth-child(even) {
+        background-color: #bbb;
+        /* Color alterno */
+    }
+
+
+}
