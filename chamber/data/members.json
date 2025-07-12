@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "EcoVerde Solutions",
+            "address": "Av. Insurgentes Sur 1234, Col. Del Valle, CDMX, México",
+            "phone number": "+52 55 1234 5678",
+            "web site url": "https://www.ecoverde.com.mx",
+            "image": "https://ui-avatars.com/api/?name=EcoVerde+Solutions&size=100&background=random",
+            "membership level": 2,
+            "description": "Sustainable solutions for modern industries."
+        },
+        {
+            "name": "Delicias Azteca",
+            "address": " 5 de Mayo 456, Centro Histórico, Puebla, México",
+            "phone number": "+52 222 987 6543",
+            "web site url": "https://www.deliciasazteca.mx",
+            "image": "https://ui-avatars.com/api/?name=Delicias+Azteca&size=100&background=random",
+            "membership level": 1,
+            "description": "Mexican gourmet cuisine and innovation."
+        },
+        {
+            "name": "TechNorte",
+            "address": "Blvd. Luis Donaldo Colosio 789, Monterrey, Nuevo León, México",
+            "phone number": "+52 81 2345 6789",
+            "web site url": "https://www.technorte.com",
+            "image": "https://ui-avatars.com/api/?name=TechNorte&size=100&background=random",
+            "membership level": 3,
+            "description": "Cloud software for growing businesses."
+        },
+        {
+            "name": "Flor y Aroma",
+            "address": " Juárez 101, Centro, Guadalajara, Jalisco, México",
+            "phone number": "+52 33 7654 3210",
+            "web site url": "https://www.floryaroma.mx",
+            "image": "https://ui-avatars.com/api/?name=Flor+y+Aroma&size=100&background=random",
+            "membership level": 1,
+            "description": "Exclusive floral arrangements for events."
+        },
+        {
+            "name": "ConstruMex",
+            "address": "Av. Revolución 202, Col. Escandón, CDMX, México",
+            "phone number": "+52 55 4321 0987",
+            "web site url": "https://www.construmex.com",
+            "image": "https://ui-avatars.com/api/?name=ConstruMex&size=100&background=random",
+            "membership level": 2,
+            "description": "Residential and commercial construction experts."
+        },
+        {
+            "name": "Viajes Sol",
+            "address": " 16 de Septiembre 55, Cancún, Quintana Roo, México",
+            "phone number": "+52 998 567 8901",
+            "web site url": "https://www.viajessol.com",
+            "image": "https://ui-avatars.com/api/?name=Viajes+Sol&size=100&background=random",
+            "membership level": 1,
+            "description": "Affordable travel packages and tours."
+        },
+        {
+            "name": "Sabor Artesano",
+            "address": "Av. Universidad 321, Oaxaca de Juárez, Oaxaca, México",
+            "phone number": "+52 951 876 5432",
+            "web site url": "https://www.saborartesano.mx",
+            "image": "https://ui-avatars.com/api/?name=Sabor+Artesano&size=100&background=random",
+            "membership level": 2,
+            "description": "Organic artisanal products and foods."
+        }
+    ]
+}
