@@ -3,10 +3,8 @@
 const cards = document.querySelector('#bussiness');
 
 async function getBussinessData() {
-    const basePath = location.hostname.includes('github.io')
-        ? `${location.pathname.split('/')[1]}/` // repo name as subfolder
-        : ''; // local
-    const response = await fetch(`${basePath}data/members.json`);
+
+    const response = await fetch("https://juliocelon.github.io/wdd231/chamber/data/members.json"); // request
     if (!response.ok) {
         console.error("HTTP error:", response.status);
         return;
