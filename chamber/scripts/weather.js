@@ -70,7 +70,7 @@ async function apiFetchForecast() {
         const response = await fetch(urlToday);
         if (response.ok) {
             const data = await response.json();
-            //console.log(data);
+            console.log(data);
             tomorrowTemp.innerHTML += `${(data.list[4].main.temp)}&deg;C`;
             afterTomorrowTemp.innerHTML += `${(data.list[12].main.temp)}&deg;C`;
             afterATomorrowTemp.innerHTML += `${(data.list[20].main.temp)}&deg;C`;
