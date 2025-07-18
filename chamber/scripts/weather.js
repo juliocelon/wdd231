@@ -10,7 +10,7 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayResults(data);
         } else {
             throw Error(await response.text());
@@ -65,12 +65,12 @@ displayWeekdays();
 async function apiFetchForecast() {
     let urlToday = `https://api.openweathermap.org/data/2.5/forecast?lat=19.3&lon=-99.14&appid=e847be2dadd4b5cd6b6d80904ffa7497&units=metric`;
 
-    console.log(urlToday);
+    //console.log(urlToday);
     try {
         const response = await fetch(urlToday);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             tomorrowTemp.innerHTML += `${(data.list[4].main.temp)}&deg;C`;
             afterTomorrowTemp.innerHTML += `${(data.list[12].main.temp)}&deg;C`;
             afterATomorrowTemp.innerHTML += `${(data.list[20].main.temp)}&deg;C`;
