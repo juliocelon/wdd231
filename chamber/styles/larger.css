@@ -151,4 +151,18 @@
     .list section:nth-child(even) {
         background-color: #bbb;
     }
+
+    .container-cta {
+        position: absolute;
+        bottom: 80px;
+        right: 250px;
+
+        background: rgba(0, 0, 0, 0.6);
+
+        color: #fff;
+        text-align: center;
+
+        padding: 15px 20px;
+        border-radius: 8px;
+    }
 }

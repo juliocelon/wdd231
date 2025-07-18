@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="W02 Assignment: Chamber Directory Page - Julio Celón">
+    <meta name="description" content="W02 Assignment: Chamber Home Page - Julio Celón">
     <meta name="author" content="Julio Celón">
 
-    <title>W02 Assignment: Chamber Directory Page - Julio Celón</title>
+    <title>W02 Assignment: Chamber Home Page - Julio Celón</title>
 
     <!-- Social media meta tags -->
-    <meta property="og:title" content="W02 Assignment: Chamber Directory Page - Julio Celón">
-    <meta property="og:description" content="Welcome to the Chamber Directory Page">
+    <meta property="og:title" content="W02 Assignment: Chamber Home Page - Julio Celón">
+    <meta property="og:description" content="Welcome to the Chamber Home Page">
     <meta property="og:image" content="https://juliocelon.github.io/wdd231/chamber/logo-cc.jpg">
     <meta property="og:image:width" content="484">
     <meta property="og:image:height" content="482">
@@ -33,8 +33,8 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/app.js" defer></script>
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/gridlist.js" defer></script>
+    <script src="scripts/members2or3.js" defer></script>
+
     <script src="scripts/weather.js" defer></script>
 </head>
 
@@ -49,7 +49,7 @@
         <nav>
             <button id="menu" aria-label="Open main navigation menu"></button>
             <ul class="navigation">
-                <li class="current"><a href="index.html" title="Home">Home</a></li>
+                <li class="current"><a href="home.html" title="Home">Home</a></li>
                 <li><a href="directory.html" title="Directory">Directory</a></li>
                 <li><a href="#" title="Join">Join</a></li>
                 <li><a href="#" title="Discover">Discover</a></li>
@@ -67,10 +67,16 @@
                 <source srcset="images/mexicocity-medium.webp" media="(min-width: 720px)">
                 <img src="images/mexicocity-small.webp" alt="México City Temple, México" width="400" height="500">
             </picture>
+
+            <div class="container-cta" id="cta">
+
+                <button>Join the Chamber</button>
+            </div>
+
         </div>
 
         <div class="main-title">
-            <h1>Directory</h1>
+            <h1>Home</h1>
         </div>
 
         <div class="events-weather">
@@ -97,30 +103,8 @@
         </div>
 
         <div class="bussiness">
-            <div class="menu">
-                <button id="grid" class="active" aria-label="grid option">
-                    <!-- Grid icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M4 4h5v5H4V4zm6 0h5v5h-5V4zm6 0h5v5h-5V4zM4 10h5v5H4v-5zm6 0h5v5h-5v-5zm6 0h5v5h-5v-5zM4 16h5v5H4v-5zm6 0h5v5h-5v-5zm6 0h5v5h-5v-5z" />
-                    </svg>
-                </button>
-                <button id="list" aria-label="list option">
-                    <!-- List icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M4 6h2v2H4V6zm4 0h12v2H8V6zm-4 5h2v2H4v-2zm4 0h12v2H8v-2zm-4 5h2v2H4v-2zm4 0h12v2H8v-2z" />
-                    </svg>
-                </button>
-            </div>
-
-
             <div class="grid" id="bussiness">
             </div>
-
-
         </div>
 
     </main>

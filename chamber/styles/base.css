@@ -117,6 +117,7 @@ nav {
     object-position: center;
 }
 
+
 .events-weather {
     display: flex;
     flex-wrap: wrap;
@@ -128,7 +129,42 @@ nav {
 .section-container {
     flex: 0 0 100%;
     background-color: #cfcfe8;
+    text-align: center;
+    padding: 25px;
 }
+
+#tomorrow-temp,
+#after-tomorrow-temp,
+#after-a-tomorrow-temp {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+p,
+figure {
+    font-size: 1.2rem;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+figcaption {
+    font-size: 1.1rem;
+}
+
+/**/
 
 footer {
     display: flex;
@@ -273,4 +309,43 @@ img {
 
 .bussiness {
     padding: 20px;
+}
+
+/* CTA Container */
+
+.hero {
+    position: relative;
+}
+
+.container-cta {
+    position: absolute;
+    bottom: 80px;
+    right: 25px;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    color: #fff;
+    text-align: center;
+
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #0433ff;
+
+    color: white;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e0381;
+
+    transform: scale(1.05);
 }
