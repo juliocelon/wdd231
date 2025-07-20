@@ -182,3 +182,57 @@ nav {
 .navigation.open a {
     display: block;
 }
+
+/* dialog */
+
+.dialog-card {
+    width: 80%;
+    max-width: 1000px;
+
+    padding: 20px;
+
+    background-color: #fff;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+
+    box-shadow: 0 0 100px rgb(0 0 0 / 50%);
+}
+
+.dialog-card:open {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.dialog-card button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    background-color: #fff;
+
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dialog-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.5rem;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+h3 {
+    padding: 15px 0px;
+    ;
+}
