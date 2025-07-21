@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+span {
+    font-size: 2.5rem;
+    padding: 20px 10px;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 5px 20px;
+}
+
+.main-title {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    justify-self: start;
+}
+
+section {
+    background: #f0f0f0;
+    padding: 10px;
+    border: 2px solid #333;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    background: #1e0381;
+    color: white;
+}
+
+p {
+    padding: 20px;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+.subject {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.subject button {
+    flex: 1;
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.subject button:hover {
+    background-color: #0000FF;
+}
+
+/* Courses */
+.course {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    flex: 1;
+}
+
+.course-card {
+    width: 100%;
+}
+
+.course-card button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+#totalCredits {
+    text-align: center;
+}
+
+/* Header and foot */
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: #1e0381;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0px 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1e0381;
+    color: #fff;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    padding: 0;
+    line-height: 1.2;
+}
+
+/* nav */
+nav {
+    background-color: #1e0381;
+    color: #fff;
+}
+
+#menu {
+    font-size: 2rem;
+    color: #fff;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #1e0381;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    width: 100%;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navigation a {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    box-sizing: border-box;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+/* dialog */
+
+.dialog-card {
+    width: 80%;
+    max-width: 1000px;
+
+    padding: 20px;
+
+    background-color: #fff;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+
+    box-shadow: 0 0 100px rgb(0 0 0 / 50%);
+}
+
+.dialog-card:open {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.dialog-card button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    background-color: #fff;
+
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dialog-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.5rem;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+h3 {
+    padding: 15px 0px;
+    ;
+}
+
+/* ANIMATION*/
+
+#loader {
+    margin: 2rem;
+
+    width: 50px;
+    /* width of the loader */
+    height: 50px;
+    /* height of the Loader */
+
+    border: 5px solid transparent;
+    /* border width */
+
+    border-color: #999 transparent #999 transparent;
+    /* border colors (4 -2 transparent */
+
+    border-radius: 50%;
+    /* make it round */
+
+    animation: spin 1.5s linear infinite;
+    /* spin animation with duration and continuous */
+
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+    /* blueish shadow effect on round div */
+}
+
+#loader::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+
+    /* pulse the gear emoji */
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(2);
+    }
+
+    /* scale to 1 */
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+/* Using transition property to create the following animation which activates when the user hovers over the image. */
+
+.loader-t {
+    /* the only thing that changed was using transition versus animation */
+    transition: spin 1.5s linear infinite;
+}
+
+.loader-t::after {
+    /* the only thing that changed was using transition versus animation */
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+loader-t:hover {
+    transform: rotate(360deg);
+}
+
+/* Rotate on hover */
+.loader-t:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+    /* Scale on hover */
+}
