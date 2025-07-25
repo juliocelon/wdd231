@@ -167,41 +167,44 @@
     }
 }
 
-/* Ensure the container-join has flex display and the children align side by side */
 @media (min-width: 600px) {
     .container-join {
         display: flex;
-        /* Add wrap to allow for responsive handling */
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 200px;
     }
 
-    /* The form's width should not exceed 48% to ensure both fit side by side */
     form.designOne {
-        width: 48%;
-        margin-right: 20px;
-        padding: 2rem;
+        width: 100%;
         background-color: #f9f9f9;
         border-radius: 8px;
+        margin: 0;
+        align-items: center;
     }
 
-    /* The memberships div's width should also be 48% */
-    .memberships {
-        width: 48%;
-    }
-
-    /* Ensure membership items have proper spacing */
     .membership {
-        margin-bottom: 15px;
+        margin: 50px 0px;
+        width: 350px;
+        border: 2px solid black;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 5px;
+        border-top-left-radius: 5px;
     }
 
-    /* Make sure labels and paragraphs have proper spacing */
     label,
     p {
         display: block;
         margin-bottom: 10px;
     }
+
+    #membership-levels {
+        width: 500px;
+        align-items: center;
+    }
 }
 
-/* Optional: Make them stack vertically on smaller screens */
 @media (max-width: 599px) {
     .container-join {
         display: block;
@@ -210,8 +213,6 @@
     form.designOne,
     .memberships {
         width: 100%;
-        /* Stack the form and memberships vertically */
         margin: 0;
-        padding: 2rem;
     }
 }

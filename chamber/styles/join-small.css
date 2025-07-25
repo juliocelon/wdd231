@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1 {
+  color: #3D405B;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+form {
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  color: purple;
+  padding-top: .2rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select,
+textarea {
+  display: block;
+  margin: .1rem 0 1rem 0;
+  padding: .3rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+  font-size: 1.2rem;
+  color: #3D405B;
+  width: 100%;
+}
+
+input[type=submit] {
+  border: none;
+  text-align: center;
+  background-color: #3D405B;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input:required {
+  border-left-color: #d70000;
+}
+
+input:focus,
+textarea:focus {
+  border-left-color: black;
+  outline: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+textarea:required {
+  border-left-color: #d70000;
+}
+
+textarea:required:valid {
+  border-left-color: green;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #3D405B;
+}
+
+#results {
+  background-color: #F4F1DE;
+  padding: 0 1rem;
+  border: 1px solid #E07A5F;
+  border-radius: 6px;
+}
+
+.container-in-main {
+  background-color: #1e0381;
+  padding: 70px;
+  border-radius: 20px;
+}
+
+.membership {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  width: 300px;
+}
+
+.container-in-main h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+
+dialog {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  padding: 20px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+
+
+.dialog-card {
+  width: 80%;
+  max-width: 500px;
+  height: 225px;
+
+  padding: 20px;
+
+  background-color: #fff;
+
+  border: 1px solid black;
+  border-radius: 5px;
+
+  position: absolute;
+  top: 45%;
+  left: 50%;
+
+  box-shadow: 0 0 100px rgb(0 0 0 / 50%);
+}
+
+.dialog-card:open {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+
+}
+
+.dialog-card p {
+  font-size: 1rem;
+  text-align: center;
+  color: #555;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+h3 {
+  padding: 15px 0px;
+  ;
+}
+
+.dialog-card button {
+  position: absolute;
+  top: 140px;
+  right: 220px;
+
+
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Add the following to your styles/join-larger.css or a relevant CSS file */
+
+
+
+/* Keyframe animation for fade-in and slight move-up */
+@keyframes fadeInMoveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to each membership card */
+.membership {
+  opacity: 0;
+  animation: fadeInMoveUp 1s ease-out forwards;
+}
+
+.membership:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.membership:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.membership:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.membership:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+
+.membership button:hover {
+  background-color: #1e0381;
+  transform: scale(1.05);
+}
