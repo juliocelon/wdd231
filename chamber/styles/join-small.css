@@ -153,15 +153,12 @@ dialog {
   left: 50%;
 
   box-shadow: 0 0 100px rgb(0 0 0 / 50%);
-}
-
-.dialog-card:open {
-  opacity: 1;
-  transform: translate(-50%, -50%);
   justify-content: center;
   align-items: center;
 
 }
+
+
 
 .dialog-card p {
   font-size: 1rem;
