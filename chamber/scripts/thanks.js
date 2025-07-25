@@ -42,7 +42,7 @@ let orgDescP = document.createElement('p');
 orgDescP.textContent = `Organization's description: ${orgDesc}`;
 
 let timestampP = document.createElement('p');
-timestampP.textContent = `Timestamps: ${timeStamp}`;
+timestampP.textContent = `Timestamp: ${timeStamp}`;
 
 let membershipP = document.createElement('p');
 membershipP.textContent = `Membership: ${membership}`;
