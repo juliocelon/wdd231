@@ -2,16 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 span {
     font-size: 2.5rem;
     padding: 20px 10px;
 
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
 }
 
 main {

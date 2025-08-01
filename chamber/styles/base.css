@@ -2,10 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-display: swap;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
+main {
+    /* Important: to avoid performance issues - Cumulative Layout shift - with the footer */
+    min-height: 100vh;
 }
 
 h1 {
@@ -175,6 +178,7 @@ footer {
     color: #fff;
     padding: 1.5rem;
     gap: 1rem;
+    min-height: 100px;
 }
 
 footer div {
@@ -193,7 +197,7 @@ footer div {
 }
 
 #currentyear {
-    font-size: 15px;
+    font-size: 20px;
     padding: 0;
 }
 
@@ -348,4 +352,20 @@ button:hover {
     background-color: #1e0381;
 
     transform: scale(1.05);
+}
+
+/* Welcome message in Discover Page */
+
+.welcomeMessage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000ff;
+}
+
+#visitMessage {
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
 }

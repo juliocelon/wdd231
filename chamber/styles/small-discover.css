@@ -1,0 +1,153 @@
+/* Discover */
+
+#bussiness {
+  grid-template-columns: 1fr;
+}
+
+#bussiness div {
+  border: 1px solid #999;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    "name"
+    "photograph"
+    "description"
+    "location"
+  ;
+}
+
+#bussiness div h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+
+  grid-area: name;
+  padding-left: 10px;
+}
+
+#bussiness div img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+
+  grid-area: photograph;
+}
+
+#bussiness div p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+  padding-left: 10px;
+}
+
+.address {
+  grid-area: location;
+}
+
+.description {
+  grid-area: description;
+}
+
+.place-card i {
+  font-style: italic;
+}
+
+.h2-card {
+  background-color: white;
+  color: black;
+}
+
+/* CSS Image Effects */
+
+.myimage {
+  width: 300px;
+  height: 200px;
+}
+
+.myimage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #333;
+}
+
+@media (max-width: 38rem) {
+  .myimage:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media only screen and (min-width: 38rem) {
+
+
+  #bussiness div {
+    grid-template-areas:
+      "photograph name"
+      "photograph description"
+      "photograph location"
+    ;
+  }
+
+
+}
+
+@media (min-width: 600px) {
+  #menu {
+    display: none;
+  }
+
+  nav {
+    position: static;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 2.8rem;
+    position: static;
+  }
+
+  .navigation a {
+    display: block;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    background-color: transparent;
+  }
+
+  .navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #fffacd;
+  }
+}
+
+@media (min-width: 600px) {
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  footer div {
+    width: 30%;
+  }
+}
+
+
+@media only screen and (min-width: 64rem) {
+
+  #bussiness {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
