@@ -1,22 +1,22 @@
 
-const paragraph = document.getElementById('visitMessage');
-const lastVisit = localStorage.getItem('lastVisit');
+const paragraph = document.getElementById('visitmessage');
+const lastvisit = localStorage.getItem('lastvisit');
 const now = Date.now();
 let message = "";
 
-if (!lastVisit) {
+if (!lastvisit) {
     // First visit
     message = "Welcome! Let us know if you have any questions.";
 } else {
-    const millisecondsInADay = 24 * 60 * 60 * 1000;
-    const daysSinceLastVisit = Math.floor((now - parseInt(lastVisit)) / millisecondsInADay);
+    const millisecondsinaday = 24 * 60 * 60 * 1000;
+    const dayssincelastvisit = Math.floor((now - parseInt(lastvisit)) / millisecondsinaday);
 
-    if (daysSinceLastVisit < 1) {
+    if (dayssincelastvisit < 1) {
         message = "Back so soon! Awesome!";
-    } else if (daysSinceLastVisit === 1) {
+    } else if (dayssincelastvisit === 1) {
         message = "You last visited 1 day ago.";
     } else {
-        message = `You last visited ${daysSinceLastVisit} days ago.`;
+        message = `You last visited ${dayssincelastvisit} days ago.`;
     }
 }
 
@@ -24,4 +24,4 @@ if (!lastVisit) {
 paragraph.textContent = message;
 
 // Store current date as last visit
-localStorage.setItem('lastVisit', now);
+localStorage.setItem('lastvisit', now);
