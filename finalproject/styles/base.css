@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    /* Important: to avoid performance issues - Cumulative Layout shift - with the footer */
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0 10px;
+}
+
+h2 {
+    padding: 10px;
+    text-align: center;
+    background: #1e0381;
+    color: white;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    padding: 5px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #1e0381;
+    color: #fff;
+}
+
+span {
+    font-size: 2rem;
+    padding: 20px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+    align-items: center;
+    background-color: #1e0381;
+    color: #fff;
+}
+
+#menu {
+    font-size: 2rem;
+    color: #fff;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: #1e0381;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "x";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.navigation a {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+}
+
+.navigation a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+.hero {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.hero picture {
+    display: block;
+    line-height: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.events-weather {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.events,
+.section-container {
+    flex: 0 0 100%;
+    background-color: #cfcfe8;
+    text-align: center;
+    padding: 25px;
+}
+
+#tomorrow-temp,
+#after-tomorrow-temp,
+#after-a-tomorrow-temp {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+p,
+figure {
+    font-size: 1.2rem;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+figcaption {
+    font-size: 1.1rem;
+}
+
+/**/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1e0381;
+    color: #fff;
+    padding: 1.5rem;
+    gap: 1rem;
+    min-height: 100px;
+}
+
+footer div {
+    width: 100%;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.footer-information p {
+    margin: 4px 0;
+    padding: 0;
+}
+
+.information-title {
+    font-weight: bold;
+}
+
+#currentyear {
+    font-size: 20px;
+    padding: 0;
+}
+
+#bussiness {
+    padding: 15px;
+}
+
+#bussiness section {
+    padding: 40px;
+    text-align: center;
+
+}
+
+#bussiness section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 25%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+    align-items: center;
+}
+
+.grid section {
+    text-align: center;
+}
+
+.grid section>* {
+    margin: 0.1rem;
+}
+
+.grid img {
+    border: 1px solid #fff;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    align-items: center;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section>* {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+}
+
+.list section:nth-child(even) {
+    background-color: #bbb;
+}
+
+img {
+    width: auto;
+    height: 75px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.menu button {
+    padding: 1rem;
+    border: 2px solid #1e0381;
+    border-radius: 8px;
+    background-color: white;
+    color: #1e0381;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #e0f7f7;
+}
+
+.menu button:active {
+    transform: scale(0.97);
+}
+
+.menu button.active {
+    background-color: #e0f7f7;
+    color: #1e0381;
+}
+
+.menu button i {
+    color: #1e0381;
+    font-size: 1.5rem;
+}
+
+.menu button.active i {
+    color: #1e0381;
+}
+
+.bussiness {
+    padding: 20px;
+}
+
+/* CTA Container */
+
+.hero {
+    position: relative;
+}
+
+.container-cta {
+    position: absolute;
+    bottom: 80px;
+    right: 25px;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    color: #fff;
+    text-align: center;
+
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #0433ff;
+
+    color: white;
+
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e0381;
+
+    transform: scale(1.05);
+}
+
+/* Welcome message in Discover Page */
+
+.welcomeMessage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0000ff;
+}
+
+#visitmessage {
+    font-size: 1.5rem;
+    color: white;
+    padding: 20px;
+}

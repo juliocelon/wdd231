@@ -1,9 +1,6 @@
 @media (min-width: 720px) {
 
-    main {
-        padding: 40px;
-        display: block;
-    }
+
 
     .hero {
         width: 100%;
@@ -81,6 +78,31 @@
 @media (min-width: 600px) {
     .section-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .bussiness {
+        background-color: red;
+        width: 80%;
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        margin: 0 auto;
+        /* Centra horizontalmente */
+    }
+
+    main {
+        background-color: lightblue;
+        padding: 0px;
+    }
+
+    .bussiness {
+        background-color: orange;
+    }
+
+    #bussiness {
+        background-color: black;
     }
 }
 

@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "Oxford Language Center - Insurgentes",
+            "address": "Av. Insurgentes Sur 1234, Col. Del Valle, CDMX, México",
+            "phone number": "+52 55 1234 5678",
+            "web site url": "https://www.oxfordinsurgentes.com",
+            "image": "https://ui-avatars.com/api/?name=Oxford+Language+Insurgentes&size=100&background=random",
+            "membership level": 2,
+            "description": "Premium English courses for business professionals in southern Mexico City."
+        },
+        {
+            "name": "Cambridge English Institute - Puebla",
+            "address": "5 de Mayo 456, Centro Histórico, Puebla, México",
+            "phone number": "+52 222 987 6543",
+            "web site url": "https://www.cambridgepuebla.com",
+            "image": "https://ui-avatars.com/api/?name=Cambridge+Puebla&size=100&background=random",
+            "membership level": 1,
+            "description": "British-style English instruction in the heart of Puebla."
+        },
+        {
+            "name": "Northern English Hub - Monterrey",
+            "address": "Blvd. Luis Donaldo Colosio 789, Monterrey, Nuevo León, México",
+            "phone number": "+52 81 2345 6789",
+            "web site url": "https://www.northernenglishhub.mx",
+            "image": "https://ui-avatars.com/api/?name=Northern+Hub+Monterrey&size=100&background=random",
+            "membership level": 3,
+            "description": "Tech-focused English learning for northern region professionals."
+        },
+        {
+            "name": "Fluent Academy - Guadalajara",
+            "address": "Juárez 101, Centro, Guadalajara, Jalisco, México",
+            "phone number": "+52 33 7654 3210",
+            "web site url": "https://www.fluentgdl.com",
+            "image": "https://ui-avatars.com/api/?name=Fluent+Academy+GDL&size=100&background=random",
+            "membership level": 1,
+            "description": "Personalized English programs for students and executives in Jalisco."
+        },
+        {
+            "name": "Bridge English School - Escandón",
+            "address": "Av. Revolución 202, Col. Escandón, CDMX, México",
+            "phone number": "+52 55 4321 0987",
+            "web site url": "https://www.bridgeescandon.com",
+            "image": "https://ui-avatars.com/api/?name=Bridge+English+Escandon&size=100&background=random",
+            "membership level": 2,
+            "description": "Dynamic English training near business and tech districts."
+        },
+        {
+            "name": "Sunrise Language School - Cancún",
+            "address": "16 de Septiembre 55, Cancún, Quintana Roo, México",
+            "phone number": "+52 998 567 8901",
+            "web site url": "https://www.sunrisecancun.com",
+            "image": "https://ui-avatars.com/api/?name=Sunrise+Language+Cancun&size=100&background=random",
+            "membership level": 1,
+            "description": "English for tourism and international communication in the Caribbean."
+        },
+        {
+            "name": "Roots English Institute - Oaxaca",
+            "address": "Av. Universidad 321, Oaxaca de Juárez, Oaxaca, México",
+            "phone number": "+52 951 876 5432",
+            "web site url": "https://www.rootsenglish.mx",
+            "image": "https://ui-avatars.com/api/?name=Roots+English+Oaxaca&size=100&background=random",
+            "membership level": 2,
+            "description": "Cultural immersion and English learning in a vibrant heritage city."
+        }
+    ]
+}

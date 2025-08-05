@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+  -ms-text-size-adjust: 100%;
+}
+
+h1 {
+  color: #3D405B;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  min-height: 100vh;
+  /* Ocupa al menos toda la altura de la ventana */
+  padding: 2rem;
+}
+
+form {
+  /*max-width: 600px;*/
+  /* Limita el ancho máximo del formulario */
+  margin: 0 auto;
+  /* Centra el formulario dentro de main */
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  /*width: 100%;*/
+  /* Asegura que el formulario ocupe todo el espacio disponible hasta el máximo definido */
+}
+
+label {
+  display: block;
+  font-size: .8rem;
+  color: purple;
+  padding-top: .2rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select,
+textarea {
+  display: block;
+  margin: .1rem 0 1rem 0;
+  padding: .3rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+  font-size: 1rem;
+  color: #3D405B;
+  width: 250px;
+  /* El mismo ancho que los input */
+}
