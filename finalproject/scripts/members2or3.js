@@ -4,7 +4,7 @@ const cards = document.querySelector('#bussiness');
 
 async function getBussinessDataLevel2or3() {
 
-    const response = await fetch("https://juliocelon.github.io/wdd231/finalproject/data/members.json"); // request
+    const response = await fetch("https://juliocelon.github.io/wdd231/finalproject/data/branches.json"); // request
     if (!response.ok) {
         console.error("HTTP error:", response.status);
         return;
@@ -18,11 +18,7 @@ getBussinessDataLevel2or3();
 
 const displayMembersLevel2or3 = (members) => {
 
-    const filteredMembers = members.filter(member =>
-        member["membership level"] === 2 || member["membership level"] === 3
-    );
-
-    const shuffledMembers = filteredMembers.sort(() => 0.5 - Math.random());
+    const shuffledMembers = members.sort(() => 0.5 - Math.random());
 
     const selectedMembers = shuffledMembers.slice(0, 3);
 
