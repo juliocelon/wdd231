@@ -18,7 +18,7 @@ getBussinessDataLevel2or3();
 
 const displayMembersLevel2or3 = (members) => {
 
-    const shuffledMembers = members.sort(() => 0.5 - Math.random());
+    const shuffledMembers = [...members].sort(() => 0.5 - Math.random());
 
     const selectedMembers = shuffledMembers.slice(0, 3);
 
