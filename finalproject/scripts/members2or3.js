@@ -33,6 +33,7 @@ const displayMembersLevel2or3 = (members) => {
         name.textContent = member.name;
 
         let contactInfo = document.createElement('div');
+        contactInfo.classList.add('contact-info');
         contactInfo.innerHTML = `
             <p>${member.address}</p>
             <p>${member["phone number"]}</p>
@@ -49,10 +50,7 @@ const displayMembersLevel2or3 = (members) => {
         image.alt = `Logo of ${member.name}`;
         image.loading = 'lazy';
 
-        let membershipInfo = document.createElement('div');
-        contactInfo.innerHTML += `
-            <p>Membership Level: ${member["membership level"]}</p>
-        `;
+
 
         // Append for grid
         card.appendChild(image);
