@@ -289,7 +289,7 @@ img {
 }
 
 .menu button:hover {
-    background-color: #e0f7f7;
+    background-color: #fff;
 }
 
 .menu button:active {
@@ -297,7 +297,7 @@ img {
 }
 
 .menu button.active {
-    background-color: #e0f7f7;
+    background-color: #fff;
     color: #1e0381;
 }
 

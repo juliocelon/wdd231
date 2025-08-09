@@ -28,7 +28,8 @@ form {
   margin: 0 auto;
   /* Centra el formulario dentro de main */
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #fff;
+  ;
   border-radius: 8px;
   /*width: 100%;*/
   /* Asegura que el formulario ocupe todo el espacio disponible hasta el máximo definido */
