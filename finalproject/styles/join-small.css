@@ -55,7 +55,7 @@ input[type=submit] {
   border: none;
   text-align: center;
   background-color: #3D405B;
-  color: white;
+  color: #fff;
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   margin: 2rem 0;
@@ -121,7 +121,7 @@ input:-webkit-autofill {
 dialog {
   width: 400px;
   height: 300px;
-  background-color: white;
+  background-color: #fff;
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: 0 0 10px rgb(0 0 0 / 50%);

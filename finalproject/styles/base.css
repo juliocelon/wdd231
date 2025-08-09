@@ -20,7 +20,7 @@ h2 {
     padding: 10px;
     text-align: center;
     background: #950606;
-    color: white;
+    color: #fff;
 }
 
 h3 {
@@ -281,7 +281,7 @@ img {
     padding: 1rem;
     border: 2px solid #950606;
     border-radius: 8px;
-    background-color: white;
+    background-color: #fff;
     color: #950606;
     font-size: 1.5rem;
     cursor: pointer;
@@ -337,7 +337,7 @@ img {
 button {
     background-color: #0433ff;
 
-    color: white;
+    color: #fff;
 
     padding: 10px 20px;
     border: none;
@@ -365,7 +365,7 @@ button:hover {
 
 #visitmessage {
     font-size: 1.5rem;
-    color: white;
+    color: #fff;
     padding: 20px;
 }
 
@@ -389,7 +389,7 @@ button:hover {
     font-size: 1.3rem;
     padding: 20px 0px;
     border-radius: 5px;
-    color: white;
+    color: #fff;
 }
 
 #class-info {
