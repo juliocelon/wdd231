@@ -1,10 +1,10 @@
 /* Discover */
 
-#bussiness {
+#courses {
   grid-template-columns: 1fr;
 }
 
-#bussiness div {
+#courses div {
   border: 1px solid #999;
   padding: 20px;
   margin: 10px;
@@ -23,7 +23,7 @@
   ;
 }
 
-#bussiness div h3 {
+#courses div h3 {
   font-size: 1.5rem;
   color: #333;
   margin: 10px 0;
@@ -32,7 +32,7 @@
   padding-left: 10px;
 }
 
-#bussiness div img {
+#courses div img {
   width: 100%;
   height: auto;
   border-radius: 8px;
@@ -40,7 +40,7 @@
   grid-area: photograph;
 }
 
-#bussiness div p {
+#courses div p {
   font-size: 1rem;
   color: #555;
   margin: 8px 0;
@@ -86,15 +86,13 @@
 @media only screen and (min-width: 38rem) {
 
 
-  #bussiness div {
+  #courses div {
     grid-template-areas:
       "photograph name"
       "photograph description"
       "photograph location"
     ;
   }
-
-
 }
 
 @media (min-width: 600px) {
@@ -144,10 +142,8 @@
 
 @media only screen and (min-width: 64rem) {
 
-  #bussiness {
+  #courses {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
-
-
 }

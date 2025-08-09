@@ -6,17 +6,17 @@ let message = "";
 
 if (!lastvisit) {
     // First visit
-    message = "Welcome! Let us know if you have any questions.";
+    message = "Welcome! Feel free to reach out if you have any questions or feedback – we're here to help!";
 } else {
     const millisecondsinaday = 24 * 60 * 60 * 1000;
     const dayssincelastvisit = Math.floor((now - parseInt(lastvisit)) / millisecondsinaday);
 
     if (dayssincelastvisit < 1) {
-        message = "Back so soon! Awesome!";
+        message = "Welcome back so soon! That's fantastic! We're excited to continue your learning journey!";
     } else if (dayssincelastvisit === 1) {
-        message = "You last visited 1 day ago.";
+        message = "Great to see you back! You last visited just 1 day ago – keep up the awesome progress!";
     } else {
-        message = `You last visited ${dayssincelastvisit} days ago.`;
+        message = `You last visited ${dayssincelastvisit} days ago. Welcome back, we’re glad to see you again!`;
     }
 }
 

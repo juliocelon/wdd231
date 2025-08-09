@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="W02 Assignment: Chamber Join Page - Julio Celón">
+    <meta name="description" content="W06 Assignment: Chamber Join Page - Julio Celón">
     <meta name="author" content="Julio Celón">
 
-    <title>W02 Assignment: Chamber Join Page - Julio Celón</title>
+    <title>W06 Assignment: Professional English Join Page - Julio Celón</title>
 
     <!-- Social media meta tags -->
-    <meta property="og:title" content="W02 Assignment: Chamber Join Page - Julio Celón">
-    <meta property="og:description" content="Welcome to the Chamber Join Page">
-    <meta property="og:image" content="https://juliocelon.github.io/wdd231/chamber/logo-cc.jpg">
+    <meta property="og:title" content="W06 Assignment: Professional English Join Page - Julio Celón">
+    <meta property="og:description" content="Welcome to the Join Page">
+    <meta property="og:image" content="https://juliocelon.github.io/wdd231/chamber/logo.jpg">
     <meta property="og:image:width" content="484">
     <meta property="og:image:height" content="482">
-    <meta property="og:url" content="https://juliocelon.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://juliocelon.github.io/wdd231/chamber/join.html">
     <meta property="og:type" content="website">
 
 
@@ -44,17 +44,16 @@
 
     <header>
         <div class="left">
-            <img src="images/logo2.svg" alt="site logo" width="30" height="30">
-            <span>CD MX Chamber of Commerce</span>
+            <img src="images/logo.svg" alt="site logo" width="20" height="20">
+            <span>Professional English</span>
         </div>
 
         <nav>
             <button id="menu" aria-label="Open main navigation menu"></button>
             <ul class="navigation">
-                <li class="current"><a href="index.html" title="Home">Home</a></li>
-                <li><a href="directory.html" title="Directory">Directory</a></li>
-                <li><a href="join.html" title="Join">Join</a></li>
-                <li><a href="discover.html" title="Discover">Discover</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="courses.html" title="Courses">Courses</a></li>
+                <li class="current"><a href="join.html" title="Join">Join</a></li>
             </ul>
         </nav>
     </header>
@@ -63,7 +62,7 @@
 
         <div class="container-join">
             <div class="container-in-main">
-                <h1>Membership Application Form</h1>
+                <h1>Join Our English Classes Today!</h1>
                 <form method="GET" action="thankyou.html" class="designOne">
                     <label>First Name <input type="text" name="first" required autocomplete="given-name"
                             title="Your First Name"></label>
@@ -71,86 +70,103 @@
                     <label>Last Name <input type="text" name="last" required autocomplete="family-name"
                             title="Your Last Name"></label>
 
-                    <label>Organizational Title
-                        <input type="text" name="title" required autocomplete="organization-title"
-                            title="Organizational Title" pattern="[A-Za-z\s\-]{7,}"> </label>
-
                     <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"
                             title="Your Email" autocomplete="email"></label>
 
                     <label>Cell Phone <input type="tel" name="phone" autocomplete="tel"
                             title="A Phone Number with dashes" placeholder="987-555-1234"></label>
 
-                    <label>Organization's name <input type="text" name="organization-name" required
-                            autocomplete="organization" title="Organization's name"></label>
-
-                    <label>Business/Organization's Description
+                    <label>Which Course Are You Interested In?
                         <textarea name="organization-description" required autocomplete="organization"
                             title="Organization's description"></textarea>
 
                     </label>
 
-                    <label>Membership level
+                    <label>Current English level
                         <select name="membership" required>
                             <option value="">None</option>
-                            <option value="NP">NP</option>
-                            <option value="Bronze">Bronze</option>
-                            <option value="Silver">Silver</option>
-                            <option value="Gold">Gold</option>
+                            <option value="Basic">Basic</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                            <option value="Proficient">Proficient</option>
                         </select>
                     </label>
 
                     <input type="hidden" name="timestamp" id="timestamp">
 
-                    <input type="submit" value="Apply for Membership">
+                    <input type="submit" value="Apply for Course Enrollment">
                 </form>
             </div>
 
             <div class="container-in-main" id="membership-levels">
-                <h2>Membership Levels</h2>
+                <h2>English Levels</h2>
                 <div class="membership">
-                    <p>Non Profit Membership Level</p>
+                    <p>Basic</p>
                     <button type="button" title="np-learn-more" id="np-learn-more">Learn More</button>
                 </div>
 
                 <div class="membership">
-                    <p>Bronze Membership Level</p>
+                    <p>Intermediate</p>
                     <button type="button" title="bronze-learn-more" id="bronze-learn-more">Learn More</button>
                 </div>
 
                 <div class="membership">
-                    <p>Silver Membership Level</p>
+                    <p>Advanced</p>
                     <button type="button" title="silver-learn-more" id="silver-learn-more">Learn More</button>
                 </div>
 
                 <div class="membership">
-                    <p>Gold Membership Level</p>
+                    <p>Proficient</p>
                     <button type="button" title="gold-learn-more" id="gold-learn-more">Learn More</button>
                 </div>
 
                 <!-- Dialog Modals -->
                 <dialog id="npModal" class="dialog-card">
-                    <h2>Non-Profit Membership</h2>
-                    <p>Access to basic events and newsletters.</p>
+                    <h2>Basic</h2>
+                    <p>Can understand and use familiar everyday expressions and basic phrases aimed at satisfying
+                        concrete needs. Can introduce
+                        themselves and others, ask and answer questions about personal details (e.g., where they live,
+                        people they know, things
+                        they have). Communication is limited to simple and routine tasks requiring a simple and direct
+                        exchange of information
+                        on familiar topics.</p>
                     <button id="closeNpModal">Close</button>
 
                 </dialog>
 
                 <dialog id="bronzeModal" class="dialog-card">
-                    <h2>Bronze Membership</h2>
-                    <p>Includes event discounts and advertising options.</p>
+                    <h2>Intermediate</h2>
+                    <p>Can understand the main ideas of complex texts on both concrete and abstract topics related to
+                        their field of expertise.
+                        Can interact with a degree of fluency and spontaneity that makes regular interaction with native
+                        speakers quite possible
+                        without strain for either party. Can produce clear, detailed text on a wide range of subjects
+                        related to their
+                        interests.</p>
                     <button id="closeBronzeModal">Close</button>
                 </dialog>
 
                 <dialog id="silverModal" class="dialog-card">
-                    <h2>Silver Membership</h2>
-                    <p>Priority event access and spotlight positions.</p>
+                    <h2>Advanced</h2>
+                    <p>Can produce clear, well-structured, detailed text on complex subjects related to their field of
+                        interest. Can express
+                        themselves fluently and spontaneously without much obvious searching for expressions. Can use
+                        language flexibly and
+                        effectively for social, academic, and professional purposes. Can produce well-organized and
+                        clearly articulated speech
+                        and writing.</p>
                     <button id="closeGoldModal">Close</button>
                 </dialog>
 
                 <dialog id="goldModal" class="dialog-card">
-                    <h2>Gold Membership</h2>
-                    <p>Exclusive events, training, and advertising benefits.</p>
+                    <h2>Proficient</h2>
+                    <p>Can read with ease virtually all forms of the written language, including abstract, structurally
+                        complex, or highly
+                        colloquial texts. Can express themselves spontaneously, very fluently, and precisely,
+                        differentiating finer shades of
+                        meaning even in more complex situations. Has a high level of accuracy and can adapt their
+                        language use to different
+                        contexts and audiences. Their understanding of language nuances is at near-native level.</p>
                     <button id="closeModal">Close</button>
                 </dialog>
             </div>
@@ -160,33 +176,21 @@
     <footer>
 
         <div class="footer-information">
-            <p class="information-title">CD MX Chamber fo commerce</p>
-            <p>Bruselas 6</p>
-            <p>Santa Ursula Coapa, Coyoacán, CD MX</p>
-            <p>info@cdmxc.org</p>
+
+            <p>© <span id="currentyear"></span> Professional English </p>
+            <p>Bruselas 6, Forestal, GAM, CD MX </p>
+            <p>info@proenglish.org</p>
             <p>(52) 55 0266 8372</p>
         </div>
 
-        <div class="social-media-links">
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="images/youtube.svg" alt="YouTube logo" width="35" height="35"> </a>
-
-            <a href="https://x.com" target="_blank">
-                <img src="images/icon-x.svg" alt="X logo" width="35" height="35">
-            </a>
-            <a href="https://www.linkedin.com/in/juliocelon" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn logo" width="35" height="35">
-            </a>
-
-        </div>
-
-        <div class="footer-information">
-            <p>WDD231 Class Project</p>
-            <p>Julio César Celón Altamirano</p>
-            <p>© <span id="currentyear"></span> CD MX Chamber fo commerce </p>
+        <div class="footer-information" id="class-info">
+            <p>WDD231 Class Project | Julio César Celón Altamirano</p>
             <p id="lastModified"></p>
+            <a id="videoPresentation" href="https://www.youtube.com" target="_blank"> Video presentation</a>
         </div>
+
     </footer>
+
 
 </body>
 

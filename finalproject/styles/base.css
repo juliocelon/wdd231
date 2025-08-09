@@ -200,17 +200,17 @@ footer div {
     padding: 0;
 }
 
-#bussiness {
+#branches {
     padding: 15px;
 }
 
-#bussiness section {
+#branches section {
     padding: 40px;
     text-align: center;
 
 }
 
-#bussiness section img {
+#branches section img {
     width: 80px;
     height: 80px;
     border-radius: 25%;
@@ -310,7 +310,7 @@ img {
     color: #950606;
 }
 
-.bussiness {
+.branches {
     padding: 20px;
 }
 
@@ -360,11 +360,44 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0000ff;
+    background-color: #171fad;
 }
 
 #visitmessage {
     font-size: 1.5rem;
     color: white;
     padding: 20px;
+}
+
+.left img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left span {
+    margin-left: 10px;
+    font-size: 2.5rem;
+}
+
+#videoPresentation {
+    font-size: 1.3rem;
+    padding: 20px 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+#class-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
+    /* Push to the right side */
 }

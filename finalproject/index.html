@@ -5,18 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="W02 Assignment: Professional English Home Page - Julio Celón">
+    <meta name="description" content="W06 Assignment: Professional English Home Page - Julio Celón">
     <meta name="author" content="Julio Celón">
 
-    <title>W02 Assignment: Professional English Home Page - Julio Celón</title>
+    <title>W06 Assignment: Professional English Home Page - Julio Celón</title>
 
     <!-- Social media meta tags -->
-    <meta property="og:title" content="W02 Assignment: Professional English Home Page - Julio Celón">
+    <meta property="og:title" content="W06 Assignment: Professional English Home Page - Julio Celón">
     <meta property="og:description" content="Welcome to the Professional English Home Page">
-    <meta property="og:image" content="https://juliocelon.github.io/wdd231/finalproject/logo-cc.jpg">
+    <meta property="og:image" content="https://juliocelon.github.io/wdd231/finalproject/logo.jpg">
     <meta property="og:image:width" content="484">
     <meta property="og:image:height" content="482">
-    <meta property="og:url" content="https://juliocelon.github.io/wdd231/finalproject/directory.html">
+    <meta property="og:url" content="https://juliocelon.github.io/wdd231/finalproject/index.html">
     <meta property="og:type" content="website">
 
 
@@ -33,16 +33,14 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/app.js" defer></script>
-    <script src="scripts/members2or3.js" defer></script>
-
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/branches.js" defer></script>
 </head>
 
 <body>
 
     <header>
         <div class="left">
-            <img src="images/logo2.svg" alt="site logo" width="30" height="30">
+            <img src="images/logo.svg" alt="site logo" width="20" height="20">
             <span>Professional English</span>
         </div>
 
@@ -64,7 +62,7 @@
             <picture>
                 <source srcset="images/students1-large.webp" media="(min-width: 1000px)">
                 <source srcset="images/students1-medium.webp" media="(min-width: 720px)">
-                <img src="images/students1-small.webp" alt="México City Temple, México" width="400" height="500">
+                <img src="images/students1-small.webp" alt="Professional English Students" width="400" height="500">
             </picture>
 
         </div>
@@ -75,9 +73,9 @@
 
         </div>
 
-        <div class="bussiness">
+        <div class="branches">
             <h2>Main branches</h2>
-            <div class="grid" id="bussiness">
+            <div class="grid" id="branches">
             </div>
         </div>
 
@@ -86,32 +84,19 @@
     <footer>
 
         <div class="footer-information">
-            <p class="information-title">Professional English</p>
-            <p>Bruselas 6</p>
-            <p>Santa Ursula Coapa, Coyoacán, CD MX</p>
+
+            <p>© <span id="currentyear"></span> Professional English </p>
+            <p>Bruselas 6, Forestal, GAM, CD MX </p>
             <p>info@proenglish.org</p>
             <p>(52) 55 0266 8372</p>
         </div>
 
-        <div class="social-media-links">
-            <a href="https://www.youtube.com" target="_blank">
-                <img src="images/youtube.svg" alt="YouTube logo" width="35" height="35"> </a>
-
-            <a href="https://x.com" target="_blank">
-                <img src="images/icon-x.svg" alt="X logo" width="35" height="35">
-            </a>
-            <a href="https://www.linkedin.com/in/juliocelon" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn logo" width="35" height="35">
-            </a>
-
-        </div>
-
-        <div class="footer-information">
-            <p>WDD231 Class Project</p>
-            <p>Julio César Celón Altamirano</p>
-            <p>© <span id="currentyear"></span> Professional English </p>
+        <div class="footer-information" id="class-info">
+            <p>WDD231 Class Project | Julio César Celón Altamirano</p>
             <p id="lastModified"></p>
+            <a id="videoPresentation" href="https://www.youtube.com" target="_blank"> Video presentation</a>
         </div>
+
     </footer>
 
 </body>

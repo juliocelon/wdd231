@@ -1,29 +1,30 @@
-import { places } from '../data/places.mjs'; // Import the places data
+import { courses } from '../data/courses.mjs'; // Import the courses data
 
-const cards = document.querySelector('#bussiness');
+const cards = document.querySelector('#courses');
 
-function displayMembers(places) {
-    places.forEach(place => {
-        // Create a card for each place and append it to the DOM
+function displayCourses(places) {
+    places.forEach(course => {
+        // Create a card for each course and append it to the DOM
         const card = document.createElement('div');
         card.classList.add('place-card');
         card.innerHTML = `
-            <img class="myimage" src="../chamber/images/${place.image}" alt="${place.name}" width="300" height="200" loading="lazy">
-            <h2 class="h2-card">${place.name}</h2>
-            <p class="address"><i>${place.address}</i></p>
-            <p class="description">${place.description}</p>
+            <img class="myimage" src="${course.image}" alt="${course.name}" width="300" height="200" loading="lazy">
+            <h2 class="h2-card">${course.name}</h2>
+            
+            <p class="description">${course.description}</p>
+            <p class="address"><i>${course.mode}</i></p>
         `;
         cards.appendChild(card);
     });
 }
 
-function getBussinessData() {
-    if (!places || places.length === 0) {
+function getCourses() {
+    if (!courses || courses.length === 0) {
         console.error("Data is missing or malformed");
         return;
     }
-    console.table(places); // Log the places data for debugging
-    displayMembers(places); // Display the places data in the DOM
+    console.table(courses);
+    displayCourses(courses);
 }
 
-getBussinessData();
+getCourses();

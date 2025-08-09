@@ -100,7 +100,7 @@
 }
 
 @media screen and (min-width: 600px) {
-    #bussiness {
+    #branches {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
 }
@@ -190,7 +190,7 @@
 
     /* Ensure membership items have proper spacing */
     .membership {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
 
     /* Make sure labels and paragraphs have proper spacing */
@@ -212,13 +212,13 @@
         width: 100%;
         /* Stack the form and memberships vertically */
         margin: 0;
-        padding: 2rem;
+        padding: 1rem;
     }
 }
 
 @media only screen and (min-width: 64rem) {
 
-    #bussiness div {
+    #branches div {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
