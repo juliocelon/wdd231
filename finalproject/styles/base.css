@@ -401,3 +401,8 @@ button:hover {
     margin-left: auto;
     /* Push to the right side */
 }
+
+.current {
+    background-color: #ff3131;
+    color: #000;
+}
